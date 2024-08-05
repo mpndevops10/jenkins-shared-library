@@ -5,7 +5,7 @@ def call(string repoUrl){
       stage ("1-check") {
         steps {
           sh 'ls'
-          sh 'java --version'
+          sh 'java -version'
         }
       }
       stage ("checkout code"){
