@@ -11,7 +11,7 @@ def call(String repoUrl){
       stage ("checkout code"){
         steps {
           git branch: 'main'
-          url: "${repoUrl}"
+                 url: "${repoUrl}"
         }
       }
       stage ("other checkings"){
